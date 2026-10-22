@@ -1,0 +1,132 @@
+/* Padding and border count inside an element's width (avoids layout surprises) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 24px 16px;
+  color: #1f2937;
+}
+
+.card {
+  background-color: white;
+  max-width: 400px;
+  margin: 0 auto;          /* centres the card horizontally */
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0 0 4px 0;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0 0 20px 0;
+  color: #6b7280;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.error {
+  margin-top: 16px;
+  padding: 10px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+}
+
+.label {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.bmi {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.category {
+  display: inline-block;
+  margin: 8px 0 0 0;
+  padding: 6px 18px;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.healthy-text {
+  margin: 10px 0 0 0;
+  color: #4b5563;
+}
+
+/* JavaScript sets one of these four classes on the category badge */
+.underweight {
+  background-color: #2563eb;   /* blue */
+}
+
+.normal {
+  background-color: #16a34a;   /* green */
+}
+
+.overweight {
+  background-color: #d97706;   /* orange */
+}
+
+.obese {
+  background-color: #dc2626;   /* red */
+}
+
+.disclaimer {
+  margin: 20px 0 0 0;
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* JavaScript adds or removes this class to show or hide things */
+.hidden {
+  display: none;
+}
